@@ -1,0 +1,23 @@
+<div class="bg">
+  <ul *ngIf="isShowing">
+    <ng-container *ngFor="let dish of recipes">
+      <li>
+        <img [src]="dish.image" [alt]="dish.name" width="210" height="200"><br>
+        <p>{{ dish.name | titlecase }}</p><br>
+        {{ dish.price | currency: 'INR' }}<br>
+        <div>
+          <button (click)="addToCart(dish)">Add to Cart</button>
+        </div>
+      </li>
+    </ng-container>
+  </ul>
+  <app-cart [dishes]="cartItems"
+            (updateCartItem)="updateCartItem($event)" 
+            (removeFromCart)="removeFromCart($event)">
+  </app-cart>
+  <div *ngIf="cartItems.length > 0">
+    <p>Total Quantity: {{ totalQuantity }}</p>
+    <p>Total Cost: {{ totalCost | currency: 'INR' }}</p>
+    <button class="checkout" (click)="checkout()" >Checkout</button>
+  </div>
+</div>
