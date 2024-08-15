@@ -1,0 +1,51 @@
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color:#fefdfe
+  }
+  .form__radios {
+    display: grid;
+    gap: 1em;
+  }
+  
+  .form__radio {
+    align-items: center;
+    background-color: #fefdfe;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    display: flex;
+    padding: 1em;
+    color: black;
+  }
+  
+  .form__radio label {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 1em;
+  }
+  .icon {
+    block-size: 30px;
+    display: inline-block;
+    fill: currentColor;
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  
+  .iphone {
+    background-color: #151414;
+    background-image: linear-gradient(to bottom, #fbf6f7, #fff);
+    border-radius: 2em;
+    block-size: 812px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    inline-size: 375px;
+    overflow: auto;
+    padding: 2em;
+  }
+
+  .container{
+    color:white;
+   
+  }

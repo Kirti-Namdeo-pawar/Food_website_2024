@@ -1,0 +1,19 @@
+<div>
+  
+    <ul>
+      <li *ngFor="let dish of dishes; let i = index">
+       <img [src]="dish.image" [alt]="dish.name" width="50" height="80"><br>
+        <p>{{ dish.name | titlecase }}</p><br>
+        {{ dish.price | currency: 'INR' }}<br>
+        <div>
+          <button (click)="increaseQuantity(dish)">+</button>
+          <span>{{ dish.quantity }}</span>
+          <button (click)="decreaseQuantity(dish)">-</button>
+        </div>
+        <button class="remove" (click)="removeItem(i)">Remove</button>
+      </li>
+    </ul>
+   
+    
+  </div>
+  

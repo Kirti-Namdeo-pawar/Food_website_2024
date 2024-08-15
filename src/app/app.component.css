@@ -1,0 +1,143 @@
+/* NAVBAR STYLING STARTS */
+.bgimage {
+    background-image: url('/assets/backgroundimg.webp');
+    background-repeat: no-repeat;
+    position: sticky;
+    height: 600px;
+    background-size: cover;
+    width: 1370px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(7, 7, 7);
+    color: #fff;
+    position:sticky;
+  }
+  
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .nav-links a {
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 32px;
+  }
+  
+  .form-control {
+    border-radius: 12px;
+    width: 350px;
+    margin-left: 20px;
+    height: 25px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    z-index: 10;
+    right: 40%;
+    color: #794c9e;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+  .menu {
+    position: relative;
+  }
+  
+  .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown li+li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+  
+  .menu:hover .dropdown {
+    display: block;
+  }
+  .chat-bot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.chat-icon-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.chat-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.chat-bot {
+    display: inline-block;
+    border: none;
+    
+}
+
+.close-chatbot-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}
+
+.close-chatbot-btn:hover {
+    background-color: #d3762f;
+}
+.container{
+    
+  margin: 0px;
+  width: 210vh;
+   background: url('/public/assets/Black\ White\ Abstract\ Color\ and\ Style\ Video\ Background.gif') no-repeat;
+ }
+ 

@@ -1,0 +1,50 @@
+/* Custom Home Component Styles */
+.welcome {
+    color: rgb(254, 249, 249);
+    margin-top: 100px;
+    font-size: 32px;
+}
+
+/* Hero Image */
+.hero-header img {
+    animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Row Margin */
+.row {
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    animation: slide-in-right 2ms ease-in-out 1s 4 linear;
+}
+.hero-header {
+  background: url('/public/assets/Black\ White\ Abstract\ Color\ and\ Style\ Video\ Background.gif') no-repeat center center;
+  background-size: cover; /* Adjust to 'contain' if you want the entire GIF to fit within the container */
+  height: 100vh; /* Adjust based on the size you want */
+  width: 100%;
+  position: relative;
+}
+/*** Service ***/
+.service-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  transition: .5s;
+  color: antiquewhite;
+}
+
+.service-item:hover {
+  background: var(--primary);
+}
+
+.service-item * {
+  transition: .5s;
+}
+
+.service-item:hover * {
+  color: var(--light) !important;
+}

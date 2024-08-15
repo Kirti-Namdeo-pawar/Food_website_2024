@@ -1,0 +1,36 @@
+<nav class="navbar">
+    <div class="logo">freshMenu</div>
+    <span>
+      <input type="text" class="form-control" placeholder="search dish name" 
+      [(ngModel)]="searchQuery" 
+      (keyup.enter)="onSearch()">
+    </span>
+    
+    <ul class="nav-links">
+      <div class="menu">
+        <li><a  routerLink="home">Home</a></li>
+        <li><a routerLink="about">About</a></li>
+        <li class="menu">
+          <a routerLink="menu">Menu</a>
+          <ul class="dropdown">
+            <li><a routerLink="/">Veg</a></li>
+            <li><a routerLink="/">Non-Veg</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="login">Login</a></li>
+        <li><a routerLink="checkout">Add to cart</a></li>
+        <i class="bi bi-cart4"></i>
+       
+      </div>
+    </ul>
+  </nav>
+  <div class="container">  <router-outlet></router-outlet></div>
+  <div class="chat-icon-container" *ngIf="!isChatbotVisible" (click)="openChatbot()">
+    <img src="/public/assets/icons8-chat-94.png" alt="Chat Icon" class="chat-icon">
+  </div>
+  
+  <div class="chat-bot-container" *ngIf="isChatbotVisible">
+    <iframe class="chat-bot" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/26e44813-1fb1-492f-a8b8-6f745839704e"></iframe>
+    <button class="close-chatbot-btn" (click)="closeChatbot()">Close</button>
+  </div>
+  
