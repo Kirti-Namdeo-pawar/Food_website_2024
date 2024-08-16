@@ -96,7 +96,7 @@ export class MenuService {
         quantity: 0,
       },
       {
-        name: "Namn",
+        name: " Garlic Nann",
         image: "/public/assets/naan.jpg",
         price: 110,
         fav: false,
